@@ -1,4 +1,4 @@
-PLOT 4
+## PLOT 4
 
 ## Read csv file and change Date column to date format
 power <- read.csv("household_power_consumption.txt", sep=";")
@@ -19,6 +19,7 @@ sub$Sub_metering_2 <- as.numeric(as.character(sub$Sub_metering_2))
 sub$Sub_metering_3 <- as.numeric(as.character(sub$Sub_metering_3))
 
 ## Graph into a .png file of 480 x 480px size
+## Make background transparent to match the figures in the original README file
 png(filename = "plot4.png", width = 480, height = 480, units = "px", pointsize = 12, bg = "transparent")
 
 ## Create a 2 x 2 space to fit the plots and set margins
