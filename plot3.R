@@ -16,6 +16,7 @@ sub$Sub_metering_2 <- as.numeric(as.character(sub$Sub_metering_2))
 sub$Sub_metering_3 <- as.numeric(as.character(sub$Sub_metering_3))
 
 ## Graph into a .png file of 480 x 480px size
+## Make background transparent to match the figures in the original README file
 png(filename = "plot3.png", width = 480, height = 480, units = "px", pointsize = 12, bg = "transparent")
 
 ## Make empty plot, we'll draw the lines later. Make the limit of y-axis 40
