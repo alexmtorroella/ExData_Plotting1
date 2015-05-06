@@ -11,6 +11,7 @@ sub <- subset(power, power$Date == "2007-02-01" | power$Date == "2007-02-02")
 sub$Global_active_power <- as.numeric(as.character(sub$Global_active_power))
 
 ## Graph into a .png file of 480 x 480px size
+## Make background transparent to match the figures in the original README file
 png(filename = "plot1.png", width = 480, height = 480, units = "px", pointsize = 12, bg = "transparent")
 
 ## Adjust breaks to match plot, and make the limit of the x-axis 8 
