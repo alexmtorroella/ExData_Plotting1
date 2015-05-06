@@ -14,6 +14,7 @@ sub$Time <- strptime(paste(sub$Date, as.character(sub$Time)), format = "%Y-%m-%d
 sub$Global_active_power <- as.numeric(as.character(sub$Global_active_power))
 
 ## Graph into a .png file of 480 x 480px size
+## Make background transparent to match the figures in the original README file
 png(filename = "plot2.png", width = 480, height = 480, units = "px", pointsize = 12, bg = "transparent")
 
 ## Plot a line graph (type = 'l'), and make the limit of the y-axis 8 
