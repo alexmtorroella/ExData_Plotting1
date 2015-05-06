@@ -1,4 +1,4 @@
-PLOT 2
+## PLOT 2
 
 ## Read csv file and change Date column to date format
 power <- read.csv("household_power_consumption.txt", sep=";")
